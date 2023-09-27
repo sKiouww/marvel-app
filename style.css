@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-
-#titre {
-    font-family: 'Croissant One', cursive;
+body{
+    background-color: #f0f0f0;
+    font-family: monospace;
+    font-size: 1.5em;
 }
