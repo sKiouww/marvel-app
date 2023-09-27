@@ -1,0 +1,12 @@
+{
+  "name" : "marvel-app",
+  "version" : "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
