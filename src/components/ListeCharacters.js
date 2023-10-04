@@ -1,4 +1,4 @@
-function ListeCharacters(characters){
+function ListeCharacters({characters}){
     const characterList = characters.map((character, index) => (
       <li key={index}>{character.name}</li>
     ));

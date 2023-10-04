@@ -1,4 +1,4 @@
-function NbCharacters(characters){
+function NbCharacters({characters}){
     return('Le nombre de characters est de ' + characters.length)
   }
 
