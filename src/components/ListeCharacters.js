@@ -1,4 +1,8 @@
 function ListeCharacters({characters}){
+    if (characters.length === 0) {
+    return <div>Liste des personnages est vide</div>;
+    }
+
     const characterList = characters.map((character, index) => (
       <li key={index}>{character.name}</li>
     ));
