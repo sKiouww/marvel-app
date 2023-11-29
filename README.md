@@ -42,12 +42,3 @@ Le projet est composé de 4 pages :
   A -- /contact --> C(Contact)
   A -- /characters/:id --> D((Character))
 ```
-
-```mermaid
-flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C --> |One| D[Laptop]
-    C --> |Two| E[Iphone]
-    C --> |Three| F[fa:fa-car Car]
-```
