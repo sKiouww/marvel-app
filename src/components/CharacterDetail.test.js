@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom'
 import CharacterDetail from './CharacterDetail';
+import { format } from 'date-fns';
 
 describe('CharactersDetail', () => {
     it('renders the character detail', () => {
@@ -25,6 +26,10 @@ describe('CharactersDetail', () => {
         // expect a paragraph with the character description
         const pElement = screen.getByText(character.description);
         expect(pElement).toBeInTheDocument();
+
+        // test pour chaque character si la date correspond bien
+        const dateElement = screen.getByText(format(new Date(character.modified), "MMMM d, yyyy"));
+        expect(dateElement).toBeInTheDocument();
 
         // expect an image with the character thumbnail
         const imgElement = screen.getByRole('img', { name: character.name });
