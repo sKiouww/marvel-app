@@ -24,13 +24,6 @@ const CompareCharactersPage = () => {
         width: 500,
     };
 
-    const center = {
-        display: 'flex',
-        flex_direction: 'row',
-        align_items: 'center',
-        width: '500px',
-    }
-
     const character1 = characters[option1.value];
     const character2 = characters[option2.value];
 

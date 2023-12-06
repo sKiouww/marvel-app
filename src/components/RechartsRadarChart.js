@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip } from 'recharts';
-import { prepareData } from './chart-utils';
 
 const RechartsRadarChart = ({ data }) => {
     // Transform the data into the format { subject: 'Subject', A: number }
